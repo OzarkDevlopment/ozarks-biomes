@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "ozrks-biomes",
+	"version": "${version}",
+	"name": "ozrks-biomes",
+	"description": "Custom biomes with Ores, Tools etc.",
+	"authors": [
+		"Ozark"
+	],
+	"contact": {
+		"homepage": "https://github.com/OzarkDevlopment",
+		"sources": "https://github.com/OzarkDevlopment/ozarks-biomes"
+	},
+	"license": "MIT",
+	"icon": "assets/ozrks-biomes/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "com.ozark.ozrksbiomes.OzrksBiomes"
+		],
+		"fabric-datagen": [
+			"com.ozark.ozrksbiomes.OzrksBiomesDataGenerator"
+		],
+		"client" : [
+			"com.ozark.ozrksbiomes.OzarksModClient"
+		]
+	},
+	"mixins": [
+		"ozrks-biomes.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
